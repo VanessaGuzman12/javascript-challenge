@@ -28,21 +28,13 @@ var dateInputText5 = d3.select("#shape")
 function Select_data(){
     d3.event.preventDefault();
     var new_data = tableData.filter(sighting => sighting.datetime===dateInputText.property("value"))
-    //var new_data3 = tableData.filter(sighting => sighting.state===dateInputText3.property("value"))
-    //var new_data4 = tableData.filter(sighting => sighting.country===dateInputText4.property("value"))
-    //var new_data5 = tableData.filter(sighting => sighting.shape===dateInputText5.property("value"))
     displayData(new_data);
-    //displayData(new_data3);
-    //displayData(new_data4);
-    //displayData(new_data5);
     
 }
 
 dateInputText.on("change", Select_data)
 
-//dateInputText3.on("change", Select_data)
-//dateInputText4.on("change", Select_data)
-//dateInputText5.on("change", Select_data)
+
 
 function select_city(){
     d3.event.preventDefault();
