@@ -36,12 +36,12 @@ dateInputText.on("change", Select_data)
 
 
 
-function select_city(){
+function Select_city(){
     d3.event.preventDefault();
     var new_data2 = tableData.filter(sighting => sighting.city===dateInputText2.property("value"))
     displayData(new_data2);
 }
-dateInputText2.on("change", select_city)
+dateInputText2.on("change", Select_city)
 
 function Select_state(){
     d3.event.preventDefault();
